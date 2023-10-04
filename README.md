@@ -1,5 +1,5 @@
 # ios101-project3-trivia-starter
-# ios101-lab4-cloudcast-starter
+
 # Project 3 - *TriviaPt1*
 
 Submitted by: **Danielle Quaye**
