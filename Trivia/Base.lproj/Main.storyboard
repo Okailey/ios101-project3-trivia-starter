@@ -1,8 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j7v-6q-gVy">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="Od7-Z2-Vbz">
+            <objects>
+                <viewController id="j7v-6q-gVy" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lY7-sp-Jw2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="glR-8j-xGg">
+                                <rect key="frame" x="6" y="125" width="381" height="602"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXQ-3h-ltw">
+                                        <rect key="frame" x="119.33333333333333" y="0.0" width="142.66666666666669" height="49"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFg-i2-mmM">
+                                        <rect key="frame" x="130.33333333333334" y="109" width="120.33333333333334" height="35"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="What is the capital of Ghana and Australia respectively?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-z6-TAP">
+                                        <rect key="frame" x="43.666666666666657" y="204" width="293.66666666666674" height="20.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-od-SaY">
+                                        <rect key="frame" x="102.66666666666667" y="284.66666666666669" width="175.66666666666663" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Accra and Canberra"/>
+                                        <connections>
+                                            <action selector="AnswerTapped1:" destination="j7v-6q-gVy" eventType="touchUpInside" id="X6Z-hf-n3h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-GE-d7Z">
+                                        <rect key="frame" x="111" y="379" width="159" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Tema and Sydney"/>
+                                        <connections>
+                                            <action selector="AnswerTapped2:" destination="j7v-6q-gVy" eventType="touchUpInside" id="I12-k5-NpF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILF-fg-m8A">
+                                        <rect key="frame" x="97.333333333333329" y="473.33333333333337" width="186.66666666666669" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Melbourne and Accra"/>
+                                        <connections>
+                                            <action selector="AnswerTapped3:" destination="j7v-6q-gVy" eventType="touchUpInside" id="COe-OH-36E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFV-yv-Kys">
+                                        <rect key="frame" x="121.00000000000001" y="567.66666666666663" width="139.33333333333337" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Malu and Tema"/>
+                                        <connections>
+                                            <action selector="AnswerTapped4:" destination="j7v-6q-gVy" eventType="touchUpInside" id="jRR-eR-zOh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="41r-YX-daI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="glR-8j-xGg" firstAttribute="top" secondItem="41r-YX-daI" secondAttribute="top" constant="66" id="0FI-ZA-Hcy"/>
+                            <constraint firstItem="glR-8j-xGg" firstAttribute="leading" secondItem="41r-YX-daI" secondAttribute="leading" constant="6" id="MiW-rQ-Dbe"/>
+                            <constraint firstItem="glR-8j-xGg" firstAttribute="centerY" secondItem="lY7-sp-Jw2" secondAttribute="centerY" id="Stm-bT-ruG"/>
+                            <constraint firstItem="glR-8j-xGg" firstAttribute="centerX" secondItem="lY7-sp-Jw2" secondAttribute="centerX" id="xyu-fZ-LuX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Answer1" destination="fxG-od-SaY" id="3Ou-2Q-xeq"/>
+                        <outlet property="Answer2" destination="PtU-GE-d7Z" id="WYA-pK-lTV"/>
+                        <outlet property="Answer3" destination="ILF-fg-m8A" id="zXS-yl-b1Z"/>
+                        <outlet property="Answer4" destination="tFV-yv-Kys" id="Ncb-ik-LxP"/>
+                        <outlet property="GeographyLabel" destination="aFg-i2-mmM" id="dE4-Vv-H3H"/>
+                        <outlet property="QuestionLabel" destination="T2o-z6-TAP" id="vfM-l1-Cvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4r-RQ-ZqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-668"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
